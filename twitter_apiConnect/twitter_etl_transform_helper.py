@@ -22,14 +22,14 @@ def obtenerTweetRT(dfTotal):
 def obtenerTweetVerficados(dfTotal):
     data = []
     for i in range(len(dfTotal)): 
-        if(str(dfTotal.loc[i,"VERFICACION"]).__contains__('True')):
+        if(str(dfTotal.loc[i,"ESTA VERIFICADO"]).__contains__('True')):
             data.append(dfTotal.loc[i])
     return  pd.DataFrame(data, columns=columnas)   
 
 def obtenerTweetNoVerficados(dfTotal):
     data = []
     for i in range(len(dfTotal)): 
-        if(str(dfTotal.loc[i,"VERFICACION"]).__contains__('False')):
+        if(str(dfTotal.loc[i,"ESTA VERIFICADO"]).__contains__('False')):
             data.append(dfTotal.loc[i])
     return  pd.DataFrame(data, columns=columnas)
 
