@@ -5,7 +5,7 @@ api_key_secret = "TZA1066NoRZBPczJsRK7IZ0adxZVHsU6rhIuFW26xLAvpt74bx"
 
 access_token = "1350080036-A2GKe8RnEdmwdwjmw0RVmuchN6qzvo55ViZgJmR"
 access_token_secret = "hszrFxwzN2DUCVOxLNxeYawi2CaaethCHiJqhEVoSX2HC"
-
+#Metodo encargado de realizar la extracion de los datos necesarios para la consulta
 def extraerDatosDesdeBusqueda(tema):
     auth = tweepy.OAuthHandler(api_key, api_key_secret)
     auth.set_access_token(access_token, access_token_secret)
