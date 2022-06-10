@@ -1,7 +1,8 @@
 import unicodedata
 import re
 from unicodedata import normalize
-
+# Metodo encargado de limpiar el texto, eliminando emojis, tildes, apostrofes 
+# y demas caracteres no necesarios en la cadena
 def limpiarTexto(texto):
     texto = re.sub(
         r"([^n\u0300-\u036f]|n(?!\u0303(?![\u0300-\u036f])))[\u0300-\u036f]+", r"\1", 
